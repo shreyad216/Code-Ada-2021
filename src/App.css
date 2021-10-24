@@ -1,4 +1,72 @@
 .title {
   text-align: center;
   vertical-align: center;
+  font-size: 40px;
+  color: white;
+  background-image: linear-gradient(to right, #74307A, #245726);
+  padding-top: 0px;
+  margin-top: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.form {
+  font-size: 20pt;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background-color: #DEDEDE;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+}
+
+.container {
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  height: 500px;
+  width: 400px;
+  align-items: center;
+  margin-left: 500px;
+  margin-top: 50px;
+  background-color: #DEDEDE;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.App {
+  background-image: linear-gradient(to right, #74307A, #245726);
+  opacity: 0.85;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.btn {
+  align-items: center;
+  font-size: 20pt;
+  background-color: #DEDEDE;
+  text-align: center;
+  margin-left: 125px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: black;
+  padding: 10px 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.foot {
+  color: white;
+  background-image: linear-gradient(to right, #74307A, #245726);
+  opacity: 0.85;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 100px;
+  font-size: 20pt;
+  vertical-align: 100px;
+}
+.countselected {
+  text-align: center;
+  background-color: #DEDEDE;
+  margin-top: 100px;
+  font-size: 20pt;
+  border-radius: 20px;
 }

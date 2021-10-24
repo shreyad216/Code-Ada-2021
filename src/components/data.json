@@ -1,0 +1,14 @@
+[
+    {
+        "itemName": "Stick",
+        "description": "Protect self from animales"
+    },
+    {
+        "itemName": "Toothbrush",
+        "name": "Brush Teeth"
+    },
+    {
+        "itemName": "Soap",
+        "description": "1: Find Water 2: Clean Self"
+    }
+]
