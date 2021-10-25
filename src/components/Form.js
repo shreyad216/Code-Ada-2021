@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import '../App.css';
-
+import { Link } from "react-router-dom";
 
 class Form extends Component {
     state = {
@@ -50,11 +50,10 @@ class Form extends Component {
                 "itemName": "Food",
                 "description": "Eat it"
             },
-            
-        ],
-        selected: [],
-    }
 
+        ],
+        selected: [3],
+    }
     onChange = (event) => {
         const isChecked = event.target.checked;
         console.log(event.target.checked)
@@ -62,8 +61,8 @@ class Form extends Component {
             this.state.count = this.state.count + 1;
             this.setState({ selected: [...this.state.selected, event.target.name, event.target.value] });
             console.log(event.target.value);
-            let newItem = {itemName:event.target.name};
-            let newDescrip = {description:event.target.value};
+            let newItem = { itemName: event.target.name };
+            let newDescrip = { description: event.target.value };
             this.state.selected.push(newItem, newDescrip);
             console.log(this.state.selected);
         } else {
@@ -73,7 +72,7 @@ class Form extends Component {
             this.setState({ selected: this.state.selected });
         }
     };
-   
+
     render() {
         return (
             <div className="container">
@@ -83,9 +82,10 @@ class Form extends Component {
                             this.state.items.map(item => {
                                 return (
                                     <label key={item.itemName}>
-                                        <input type="checkbox" onChange={this.onChange} name = {item.itemName} value = {item.description} ></input>
+                                        <input type="checkbox" onChange={this.onChange} name={item.itemName} value={item.description} ></input>
                                         <span>{item.itemName}</span>
                                         <br />
+                                        {/* <br /> */}
                                     </label>
                                 )
                             })
@@ -93,11 +93,18 @@ class Form extends Component {
                     </form>
                 </div>
                 <div className="countselected">
-                   <p> {this.state.count} of 6 selected</p>
+                    <p> {this.state.count} of 6 selected</p>
                 </div>
-                <button className="btn">Submit</button>
+                {/* <Link to="/Cards" state={{ selectedItems: this.state.selected }}> */}
+                    <a href= "/Cards/">
+                    <button className="btn" >
+                        Submit
+                    </button>
+                </a>
+                    {/* Submit
+                </Link> */}
             </div>
-            
+
         )
     }
 }
